@@ -2,7 +2,9 @@
 
 A site to help me make pizza with friends!
 
-<a href="https://unrivaled-florentine-6102a2.netlify.app" target="_blank">Live url</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac5502c3-91a6-430a-a788-83f5294385f3/deploy-status)](https://app.netlify.com/sites/home-pizza-maker/deploys)
+
+<a href="https://home-pizza-maker.netlify.app" target="_blank">Live url</a>
 
 <img alt="Logo" src="./src/assets/logo.png" height="150" />
 
