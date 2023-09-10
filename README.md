@@ -2,7 +2,7 @@
 
 A site to help me make pizza with friends!
 
-<a href="" target="_blank">Live url</a>
+<a href="https://unrivaled-florentine-6102a2.netlify.app" target="_blank">Live url</a>
 
 <img alt="Logo" src="./src/assets/logo.png" height="150" />
 
