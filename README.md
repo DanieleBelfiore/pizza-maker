@@ -1,12 +1,12 @@
-# pizza-maker
+# Pizza Maker
 
 A site to help me make pizza with friends!
 
+<img alt="Logo" src="./src/assets/logo.png" height="150" />
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ac5502c3-91a6-430a-a788-83f5294385f3/deploy-status)](https://app.netlify.com/sites/home-pizza-maker/deploys)
 
-<a href="https://home-pizza-maker.netlify.app" target="_blank">Live url</a>
-
-<img alt="Logo" src="./src/assets/logo.png" height="150" />
+<a href="https://home-pizza-maker.netlify.app" target="_blank">Live Url</a>
 
 ## Clarification
 
