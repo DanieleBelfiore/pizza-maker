@@ -12,7 +12,7 @@
           <img class="pizza" alt="pizza" src="@/assets/pizza.png" />
         </div>
         <div class="list">
-          <div>Farina 0: {{ Math.round(quantity * flour) }} gr</div>
+          <div>Farina 0 (Caputo Nuvola): {{ Math.round(quantity * flour) }} gr</div>
           <div>Lievito: {{ Math.round(quantity * yeast) }} gr</div>
           <div>Acqua: {{ Math.round(quantity * water) }} ml</div>
           <div>Sale: {{ Math.round(quantity * salt) }} gr</div>
@@ -25,39 +25,22 @@
       </div>
       <Transition>
         <div class="recipe" v-if="recipe">
-          <strong>Procedimento</strong>:<br>
+          <strong>Procedimento (~24-28h prima di mangiarla)</strong>:<br>
           <ul>
-            <li>Mettere nel boccale dell'impastatrice l'acqua, lo zucchero e il lievito (37° a velocità 1 per 2min) oppure senza impastatrice mettere in un
-              recipiente
-              metà acqua tiepida con zucchero e lievito e attendere 2min. La restante acqua va aggiunta mentre si impasta.</li>
-            <li>Mescolare bene le farine e, se possibile, setacciare.</li>
-            <li>Aggiungere la farina, poi il sale e impastare per almeno 5-6min in modalità impasto oppure impastare a mano ponendo la farina a fontana,
-              aggiungere
-              l'acqua con il lievito, poi il sale e la restante acqua. Impastare per almeno 10min.</li>
-            <li>Lasciare riposare mezz'ora nel boccale, poi piegare il panetto con le classiche pieghe. Rifare il procedimento 1 volta dopo ~2h.</li>
-            <li>Lasciare a lievitare in frigo per almeno ~12h; ad esempio si può fare la sera verso le 18 per il pranzo del giorno dopo o verso le 21 per la
-              cena
-              del
-              giorno dopo.</li>
-            <li>Togliere l'impasto dal frigo, dopo mezz'ora dividere in panetti da ~280gr e far lievitare per 4-5h, poi stendere e condire a piacimento.</li>
-            <li>Riscaldare il forno in modalità ventilato al max ~30min prima di infornare l'impasto. Inserire da subito anche la pietra refrattaria nel forno.
-              Se
-              non
-              ce l'hai cerca di comprarla perché fa davvero la differenza, in alternativa tieni la teglia nel forno così sarà calda nel momento in cui
-              inforni.</li>
-            <li>Infornare l'impasto.</li>
+            <li>Mettere nel boccale dell'impastatrice la farina e il lievito.</li>
+            <li>Attivare la modalità impastatrice a 37° a velocità 1 per 4min.</li>
+            <li>Mentre sta impastando, aggiungere a filo l'acqua e, a meno di metà acqua, il sale e l'acqua restante.</li>
+            <li>Lasciare riposare ~30min nel boccale.</li>
+            <li>Piegare il panetto con le classiche pieghe a portafoglio.</li>
+            <li>Mettere l'impasto in un contenitore con coperchio e lasciar lievitare per ~2h.</li>
+            <li>Mettere il contenitore in frigo per ~24h.</li>
+            <li>Togliere l'impasto dal frigo e dopo ~30min dividere in panetti da ~280gr.</li>
+            <li>Far lievitare per ~3-4h.</li>
+            <li>Stendere e condire a piacimento.</li>
+            <li>Al momento della cottura, inserire da subito la pietra refrattaria (o la teglia) in forno.</li>
+            <li>Accendere il forno in modalità ventilato alla massima temperatura per ~30min.</li>
           </ul>
-          <strong>Suggerimento</strong>:<br>
-          <ul>
-            <li>Consiglio la farina 0 Caputo Nuvola.</li>
-            <li>Per una migliore pizza (con lievitazione di ~28h) impastare la mattina verso le 8, dopo 2h fare le pieghe, dopo altre 2h idem, come nel
-              procedimento
-              spiegato sopra.</li>
-            <li>Mettere l'impasto in frigorifero verso le 13 e lasciarlo lì fino alla mattina dopo.</li>
-            <li>Togliere l'impasto dal frigo e dopo 30min/1h dividere i panetti e far lievitare per almeno 4h.</li>
-            <li>Stendere e infornare.</li>
-          </ul>
-          <u>Nota: per doppia dose fare 2 panetti divisi</u><br>
+          <u>Nota: per doppia dose fare 2 panetti divisi.</u><br>
         </div>
       </Transition>
       <Transition>
