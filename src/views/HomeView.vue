@@ -28,14 +28,15 @@
           <strong>Procedimento (~24-28h prima di mangiarla)</strong>:<br>
           <ul>
             <li>Mettere nel boccale dell'impastatrice la farina e il lievito.</li>
-            <li>Attivare la modalità impastatrice a 37° a velocità 1 per 4min.</li>
+            <li>Preparare l'acqua in una caraffa.</li>
+            <li>Attivare la modalità impastatrice a 0° a velocità 4 per 4min.</li>
             <li>Mentre sta impastando, aggiungere a filo l'acqua e, a meno di metà acqua, il sale e l'acqua restante.</li>
             <li>Lasciare riposare ~30min nel boccale.</li>
             <li>Piegare il panetto con le classiche pieghe a portafoglio.</li>
-            <li>Mettere l'impasto in un contenitore con coperchio e lasciar lievitare per ~2h.</li>
+            <li>Mettere l'impasto in un contenitore con coperchio e lasciar lievitare a temperatura ambiente per ~2h.</li>
             <li>Mettere il contenitore in frigo per ~24h.</li>
-            <li>Togliere l'impasto dal frigo e dopo ~30min dividere in panetti da ~280gr.</li>
-            <li>Far lievitare per ~3-4h.</li>
+            <li>~3-4h prima di infornare, togliere l'impasto dal frigo e dopo ~30min dividere in panetti da ~280gr.</li>
+            <li>Far lievitare per ~3h.</li>
             <li>Stendere e condire a piacimento.</li>
             <li>Al momento della cottura, inserire da subito la pietra refrattaria (o la teglia) in forno.</li>
             <li>Accendere il forno in modalità ventilato alla massima temperatura per ~30min.</li>
