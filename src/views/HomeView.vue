@@ -40,7 +40,7 @@
             <li>Ripiegare nuovamente il panetto con le classiche pieghe a portafoglio.
             </li>
             <li>Aggiungere un filo d'olio nel contenitore e mettere l'impasto in frigo per almeno ~24h.</li>
-            <li>~4h prima di infornare, togliere l'impasto dal frigo e fare lo staglio dividendo in panetti da ~270gr.
+            <li>~4h prima di infornare, togliere l'impasto dal frigo e fare lo staglio dividendo in panetti da ~260gr.
             </li>
             <li>Stendere e condire a piacimento.</li>
           </ul>
