@@ -32,15 +32,15 @@ input[type="number"] {
 }
 
 button {
-  background-color: #eb2f2f;
-  border-color: #eb2f2f;
+  background-color: #428bca;
+  border-color: #428bca;
   display: inline-block;
   padding: 8px 16px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border: 1px solid #eb2f2f;
+  border: 1px solid #428bca;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
@@ -49,9 +49,13 @@ button {
 
 /* Stile al passaggio del mouse */
 button:hover {
-  background-color: #ea4d4d;
-  border-color: #ea4d4d;
+  background-color: #428bca;
+  border-color: #428bca;
   color: #fff;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 .title {
@@ -63,19 +67,13 @@ button:hover {
   text-align: left;
 }
 
-.recipe-suggestion {
-  display: flex;
-  column-gap: 16px;
-  justify-content: center;
-}
-
 .recipe h2 {
   text-align: center;
 }
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 2s ease;
+  transition: opacity 0.5s ease;
 }
 
 .v-enter-from,
@@ -103,7 +101,7 @@ button:hover {
 }
 
 .logo {
-  width: 256px;
+  width: 512px;
 }
 
 .pizza {
@@ -123,18 +121,11 @@ button:hover {
   }
 
   .logo {
-    width: 150px;
+    width: 250px;
   }
 
   .pizza {
     width: 75px;
-  }
-
-  .recipe-suggestion {
-    display: flex;
-    column-gap: 16px;
-    margin-top: 16px;
-    justify-content: center;
   }
 
   h1 {
@@ -148,4 +139,40 @@ button:hover {
   h3 {
     font-size: 14px;
   }
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-qty {
+  background-color: #428bca;
+  /* Rosso pizza */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s active;
+}
+
+.btn-qty:active {
+  transform: scale(0.9);
+  /* Effetto pressione */
+}
+
+.quantity {
+  text-align: center;
+  width: 60px;
+  font-size: 1.2rem;
 }
