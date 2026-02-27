@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: 1rem;
   font-weight: normal;
+  color: #fff;
 }
 
 h1,
@@ -47,7 +48,6 @@ button {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-/* Stile al passaggio del mouse */
 button:hover {
   background-color: #428bca;
   border-color: #428bca;
@@ -58,8 +58,19 @@ li {
   margin-bottom: 8px;
 }
 
+.title,
+.ingredients,
+.recipe {
+  background-color: rgba(30, 30, 30, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+}
+
 .title {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .recipe {
@@ -81,10 +92,6 @@ li {
   opacity: 0;
 }
 
-.ingredients-container {
-  text-align: center;
-}
-
 .ingredients {
   display: flex;
   flex-flow: row;
@@ -97,15 +104,80 @@ li {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  font-weight: bold !important;
-}
-
-.logo {
-  width: 512px;
 }
 
 .pizza {
   width: 125px;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-qty {
+  background-color: #428bca;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s active;
+}
+
+.btn-qty:active {
+  transform: scale(0.9);
+}
+
+.quantity {
+  text-align: center;
+  width: 60px;
+  font-size: 1.2rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.background-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+}
+
+input[type="number"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #42b883;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 @media only screen and (max-width: 900px) {
@@ -118,10 +190,6 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 1rem;
-  }
-
-  .logo {
-    width: 250px;
   }
 
   .pizza {
@@ -139,40 +207,9 @@ li {
   h3 {
     font-size: 14px;
   }
-}
 
-.quantity-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.btn-qty {
-  background-color: #428bca;
-  /* Rosso pizza */
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.1s active;
-}
-
-.btn-qty:active {
-  transform: scale(0.9);
-  /* Effetto pressione */
-}
-
-.quantity {
-  text-align: center;
-  width: 60px;
-  font-size: 1.2rem;
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
