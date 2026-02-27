@@ -38,7 +38,7 @@
     <div class="dough-settings">
       <label>
         Peso panetto (gr): 
-        <input type="number" min="150" max="500" v-model="doughWeight">
+        <input type="number" min="150" max="500" step="5" v-model="doughWeight">
       </label>
       <label>
         Idratazione (%): 
