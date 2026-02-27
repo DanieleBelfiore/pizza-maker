@@ -29,9 +29,9 @@
 </script>
 
 <template>
-  <video class="background-video" autoplay loop muted playsinline poster="@/assets/logo.png">
+  <video class="background-video" autoplay loop muted playsinline poster="@/assets/logo.jpg">
     <source src="@/assets/logo-bg.mp4" type="video/mp4" />
-    <img class="background-video" src="@/assets/logo.png" alt="Background" />
+    <img class="background-video" src="@/assets/logo.jpg" alt="Background" />
   </video>
   <div class="title">
     <h1>La Formula Magica Per L'impasto Perfetto ✨</h1>
@@ -58,7 +58,7 @@
       <div class="content-grid">
         <div class="ingredients">
           <div class="list">
-            <img class="responsive-img" alt="ingredients" src="@/assets/ingredients.png" />
+            <img class="responsive-img" alt="ingredients" src="@/assets/ingredients.jpg" />
             <h3>Ingredienti:</h3>
             <ul>
               <li>Farina 0 (Caputo Nuvola): {{ Math.round(quantity * flour / 5) * 5 }} gr</li>
@@ -70,7 +70,7 @@
         </div>
         <div class="recipe">
           <div class="list">
-            <img class="responsive-img" alt="recipe" src="@/assets/recipe.png" />
+            <img class="responsive-img" alt="recipe" src="@/assets/recipe.jpg" />
             <h3>Procedimento (~24 ore prima):</h3>
             <ul>
               <li>Inserire nell'impastatrice il <strong>gancio di tipo foglia</strong>, amalgamerà meglio l'impasto.</li>
