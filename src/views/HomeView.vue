@@ -29,9 +29,12 @@
 </script>
 
 <template>
-  <img class="background-logo" alt="logo" src="@/assets/logo.png" />
+  <video class="background-video" autoplay loop muted playsinline poster="@/assets/logo.png">
+    <source src="@/assets/logo-bg.mp4" type="video/mp4" />
+    <img class="background-video" src="@/assets/logo.png" alt="Sfondo pizza" />
+  </video>
   <div class="title">
-    <h1>Vuoi Ricreare L'arte Della Pizza??</h1>
+    <h1>Vuoi Ricreare L'arte Della Pizza?</h1>
     <div style="margin-bottom: 20px;">
       <label style="margin-right: 15px;">
         Peso Panetto (gr): 
