@@ -20,10 +20,10 @@
   };
 
   const decrement = () => {
-    if (quantity.value && quantity.value > 1) {
+    if (quantity.value && quantity.value > 0) {
       quantity.value--;
     } else {
-      quantity.value = 1;
+      quantity.value = 0;
     }
   };
 </script>
@@ -31,34 +31,34 @@
 <template>
   <video class="background-video" autoplay loop muted playsinline poster="@/assets/logo.png">
     <source src="@/assets/logo-bg.mp4" type="video/mp4" />
-    <img class="background-video" src="@/assets/logo.png" alt="Sfondo pizza" />
+    <img class="background-video" src="@/assets/logo.png" alt="Background" />
   </video>
   <div class="title">
-    <h1>Vuoi Ricreare L'arte Della Pizza?</h1>
-    <div style="margin-bottom: 20px;">
-      <label style="margin-right: 15px;">
-        Peso Panetto (gr): 
-        <input type="number" min="150" max="500" v-model="doughWeight" style="width: 80px;">
+    <h1>La Formula Magica Per L'impasto Perfetto ✨</h1>
+    <div class="dough-settings">
+      <label>
+        Peso panetto (gr): 
+        <input type="number" min="150" max="500" v-model="doughWeight">
       </label>
       <label>
         Idratazione (%): 
-        <input type="number" min="50" max="100" v-model="hydration" style="width: 60px;">
+        <input type="number" min="50" max="100" v-model="hydration">
       </label>
     </div>
     <h2>Quante Pizze Vuoi Fare? 
       <div class="quantity-controls">
         <button class="btn-qty" @click="decrement">-</button>
-        <input class="quantity" type="number" min="1" max="100" v-model="quantity" readonly>
+        <input class="quantity" type="number" min="0" max="100" v-model="quantity" readonly>
         <button class="btn-qty" @click="increment">+</button>
       </div>
     </h2>
   </div>
-  <Transition>
-    <div class="ingredients-container" v-if="quantity">  
+  <Transition name="slide-fade">
+    <div class="container" v-if="quantity">  
       <div class="content-grid">
         <div class="ingredients">
           <div class="list">
-            <img class="pizza" alt="ingredients" src="@/assets/ingredients.png" />
+            <img class="responsive-img" alt="ingredients" src="@/assets/ingredients.png" />
             <h3>Ingredienti:</h3>
             <ul>
               <li>Farina 0 (Caputo Nuvola): {{ Math.round(quantity * flour / 5) * 5 }} gr</li>
@@ -70,7 +70,7 @@
         </div>
         <div class="recipe">
           <div class="list">
-            <img class="pizza" alt="recipe" src="@/assets/recipe.png" />
+            <img class="responsive-img" alt="recipe" src="@/assets/recipe.png" />
             <h3>Procedimento (~24 ore prima):</h3>
             <ul>
               <li>Inserire nell'impastatrice il <strong>gancio di tipo foglia</strong>, amalgamerà meglio l'impasto.</li>
@@ -93,6 +93,6 @@
     </div>
   </Transition>
   <div class="footer" v-if="quantity">
-    <h2>Buon Appetito! 😋</h2>
+    <h2>Impastato Con Amore (e Tanta Pazienza Per La Lievitazione) ❤️</h2>
   </div>
 </template>
