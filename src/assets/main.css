@@ -59,6 +59,7 @@ li {
 }
 
 .title,
+.footer,
 .ingredients,
 .recipe {
   background-color: rgba(30, 30, 30, 0.6);
@@ -73,13 +74,22 @@ li {
   margin-bottom: 30px;
 }
 
-.recipe {
-  margin-top: 8px;
-  text-align: left;
+.footer {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.recipe h2 {
-  text-align: center;
+.recipe {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.recipe .list {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
 }
 
 .v-enter-active,
@@ -96,7 +106,6 @@ li {
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
   column-gap: 16px;
 }
 
@@ -107,7 +116,9 @@ li {
 }
 
 .pizza {
-  width: 125px;
+  border-radius: 8px;
+  width: 500px;
+  margin: auto;
 }
 
 .quantity-controls {
@@ -205,7 +216,8 @@ input[type="number"]:focus {
   }
 
   .pizza {
-    width: 75px;
+    border-radius: 8px;
+    width: 250px;
   }
 
   h1 {
