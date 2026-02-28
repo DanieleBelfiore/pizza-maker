@@ -26,15 +26,15 @@
       <div class="dough-settings">
         <label>
           Peso panetto: <strong>{{ doughWeight }} gr</strong><br>
-          <input type="range" min="150" max="500" step="5" v-model.number="doughWeight">
+          <input type="range" min="150" max="350" step="5" v-model.number="doughWeight">
         </label>
         <label>
           Pizze: <strong>{{ quantity }}</strong><br>
-          <input class="slider" type="range" min="0" max="100" step="1" v-model.number="quantity">
+          <input class="slider" type="range" min="0" max="15" step="1" v-model.number="quantity">
         </label>
         <label>
           Idratazione: <strong>{{ hydration }}%</strong><br>
-          <input type="range" min="50" max="100" step="1" v-model.number="hydration">
+          <input type="range" min="60" max="80" step="1" v-model.number="hydration">
         </label>
       </div>
     </div>
