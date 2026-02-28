@@ -19,15 +19,6 @@ h6 {
   padding-bottom: 8px;
 }
 
-input[type="number"] {
-  padding: 8px 0;
-  margin-left: 16px;
-  box-sizing: border-box;
-  font-size: 20px;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-}
-
 :focus {
   outline: none;
 }
@@ -204,7 +195,9 @@ input[type="number"] {
   color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 8px;
+  box-sizing: border-box;
   padding: 8px 12px;
+  margin-left: 16px;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s ease;
