@@ -22,7 +22,7 @@
       <img class="background-video" src="@/assets/logo.jpg" alt="Background" />
     </video>
     <div class="title">
-      <h1>La Formula Magica Per L'impasto Perfetto ✨</h1>
+      <h1>La Formula Magica Per La Pizza Perfetta ✨</h1>
       <div class="dough-settings">
         <label>
           Peso panetto: <strong>{{ doughWeight }} gr</strong><br>
