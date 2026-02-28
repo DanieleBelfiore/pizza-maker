@@ -89,16 +89,6 @@ li {
   align-items: flex-start;
 }
 
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-
 .ingredients {
   display: flex;
   flex-flow: row;
@@ -118,40 +108,6 @@ li {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-}
-
-.quantity-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.btn-qty {
-  background-color: #428bca;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.1s active;
-}
-
-.btn-qty:active {
-  transform: scale(0.9);
-}
-
-.quantity {
-  text-align: center;
-  width: 60px;
-  font-size: 1.2rem;
 }
 
 .content-grid {
@@ -270,5 +226,23 @@ input[type="number"]:focus {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin: 15px 0;
+    height: 8px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
   }
 }
