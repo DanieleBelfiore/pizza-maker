@@ -19,7 +19,7 @@
   <main>
     <video class="background-video" autoplay loop muted playsinline poster="@/assets/logo.jpg">
       <source src="@/assets/logo-bg.mp4" type="video/mp4" />
-      <img class="background-video" src="@/assets/logo.jpg" alt="Background" />
+      <img class="background-logo" src="@/assets/logo.jpg" alt="Background" />
     </video>
     <div class="title">
       <h1>La Formula Magica Per La Pizza Perfetta ✨</h1>
@@ -30,7 +30,7 @@
         </label>
         <label>
           Pizze: <strong>{{ quantity }}</strong><br>
-          <input class="slider" type="range" min="0" max="15" step="1" v-model.number="quantity">
+          <input type="range" min="0" max="15" step="1" v-model.number="quantity">
         </label>
         <label>
           Idratazione: <strong>{{ hydration }}%</strong><br>
