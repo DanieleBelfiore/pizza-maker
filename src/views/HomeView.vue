@@ -96,5 +96,5 @@
     <div class="footer" v-if="quantity">
       <h2>Impastato Con Amore (e Tanta Pazienza Per La Lievitazione) ❤️</h2>
     </div>
-  <main>
+  </main>
 </template>
