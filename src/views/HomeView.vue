@@ -29,15 +29,14 @@
           <input type="range" min="150" max="500" step="5" v-model.number="doughWeight">
         </label>
         <label>
+          Pizze: <strong>{{ quantity }}</strong><br>
+          <input class="slider" type="range" min="0" max="100" step="1" v-model.number="quantity">
+        </label>
+        <label>
           Idratazione: <strong>{{ hydration }}%</strong><br>
           <input type="range" min="50" max="100" step="1" v-model.number="hydration">
         </label>
       </div>
-      <h2>Quante Pizze Vuoi Fare? 
-        <div class="quantity-controls">
-          <input class="slider" type="range" min="0" max="100" step="1" v-model.number="quantity">
-        </div>
-      </h2>
     </div>
     <Transition name="slide-fade">
       <div class="container" v-if="quantity > 0">  
