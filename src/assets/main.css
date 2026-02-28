@@ -228,6 +228,18 @@ input[type="number"]:focus {
     gap: 15px;
   }
 
+  .dough-settings label:nth-child(1) {
+    order: 1;
+  }
+  
+  .dough-settings label:nth-child(2) {
+    order: 3;
+  }
+  
+  .dough-settings label:nth-child(3) {
+    order: 2;
+  }
+
   input[type="range"] {
     width: 100%;
     margin: 15px 0;
