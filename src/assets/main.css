@@ -177,6 +177,7 @@ li {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   object-fit: cover;
   opacity: 0.5;
   z-index: -1;
@@ -192,7 +193,7 @@ li {
   height: 100dvh;
   object-fit: cover;
   object-position: 50% center;
-  opacity: 0.5;
+  filter: brightness(0.4);
   z-index: -1;
   pointer-events: none;
 }
