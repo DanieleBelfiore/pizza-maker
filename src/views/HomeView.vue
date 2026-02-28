@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref, computed } from 'vue';
 
-  const quantity = ref<number | null>(null);
+  const quantity = ref<number>(0);
   const doughWeight = ref(280);
   const hydration = ref(70);
   const saltPercentage = ref(2.5);
@@ -13,19 +13,6 @@
   const water = computed(() => (doughWeight.value / totalPercentage.value) * hydration.value);
   const salt = computed(() => (doughWeight.value / totalPercentage.value) * saltPercentage.value);
   const yeast = computed(() => (doughWeight.value / totalPercentage.value) * yeastPercentage.value);
-
-  const increment = () => {
-    quantity.value = (quantity.value || 0) + 1;
-    if (quantity.value > 100) quantity.value = 100;
-  };
-
-  const decrement = () => {
-    if (quantity.value && quantity.value > 0) {
-      quantity.value--;
-    } else {
-      quantity.value = 0;
-    }
-  };
 </script>
 
 <template>
@@ -48,14 +35,12 @@
       </div>
       <h2>Quante Pizze Vuoi Fare? 
         <div class="quantity-controls">
-          <button class="btn-qty" @click="decrement">-</button>
-          <input class="quantity" type="number" min="0" max="100" v-model="quantity" readonly>
-          <button class="btn-qty" @click="increment">+</button>
+          <input class="slider" type="range" min="0" max="100" step="1" v-model.number="quantity">
         </div>
       </h2>
     </div>
     <Transition name="slide-fade">
-      <div class="container" v-if="quantity">  
+      <div class="container" v-if="quantity > 0">  
         <div class="content-grid">
           <div class="ingredients">
             <div class="list">
@@ -93,7 +78,7 @@
         </div>
       </div>
     </Transition>
-    <div class="footer" v-if="quantity">
+    <div class="footer" v-if="quantity > 0">
       <h2>Impastato Con Amore (e Tanta Pazienza Per La Lievitazione) ❤️</h2>
     </div>
   </main>
