@@ -191,7 +191,7 @@ li {
   height: 100vh;
   height: 100dvh;
   object-fit: cover;
-  object-position: 70% center;
+  object-position: 50% center;
   opacity: 0.5;
   z-index: -1;
   pointer-events: none;
