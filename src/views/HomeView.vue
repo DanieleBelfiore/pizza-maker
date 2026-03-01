@@ -6,6 +6,15 @@
   const hydration = ref(70);
   const saltPercentage = ref(2.5);
   const yeastPercentage = ref(0.3);
+  const minDoughWeight = ref(150);
+  const maxDoughWeight = ref(350);
+  const stepDoughWeight = ref(5);
+  const minQuantity = ref<number>(0);
+  const maxQuantity = ref(15);
+  const stepQuantity = ref<number>(1);
+  const minHydration = ref(60);
+  const maxHydration = ref(80);
+  const stepHydration = ref<number>(1);
 
   const totalPercentage = computed(() => 100 + hydration.value + saltPercentage.value + yeastPercentage.value);
 
@@ -13,6 +22,21 @@
   const water = computed(() => (doughWeight.value / totalPercentage.value) * hydration.value);
   const salt = computed(() => (doughWeight.value / totalPercentage.value) * saltPercentage.value);
   const yeast = computed(() => (doughWeight.value / totalPercentage.value) * yeastPercentage.value);
+
+  const updateDoughWeight = (amount: number) => {
+    const newValue = doughWeight.value + amount;
+    if (newValue >= minDoughWeight.value && newValue <= maxDoughWeight.value) doughWeight.value = newValue;
+  };
+
+  const updateQuantity = (amount: number) => {
+    const newValue = quantity.value + amount;
+    if (newValue >= minQuantity.value && newValue <= maxQuantity.value) quantity.value = newValue;
+  };
+
+  const updateHydration = (amount: number) => {
+    const newValue = hydration.value + amount;
+    if (newValue >= minHydration.value && newValue <= maxHydration.value) hydration.value = newValue;
+  };
 </script>
 
 <template>
@@ -26,20 +50,32 @@
       <div class="dough-settings">
         <label>
           Peso panetto: <strong>{{ doughWeight }} gr</strong><br>
-          <input type="range" min="150" max="350" step="5" v-model.number="doughWeight">
+          <div class="slider-container">
+            <button @click="updateDoughWeight(-stepDoughWeight)">-</button> 
+            <input type="range" :min="minDoughWeight" :max="maxDoughWeight" :step="stepDoughWeight" v-model.number="doughWeight">
+            <button @click="updateDoughWeight(stepDoughWeight)">+</button>
+          </div>
         </label>
         <label>
           Pizze: <strong>{{ quantity }}</strong><br>
-          <input type="range" min="0" max="15" step="1" v-model.number="quantity">
+          <div class="slider-container">
+            <button @click="updateQuantity(-stepQuantity)">-</button>
+            <input type="range" :min="minQuantity" :max="maxQuantity" :step="stepQuantity" v-model.number="quantity">
+            <button @click="updateQuantity(stepQuantity)">+</button>
+          </div>
         </label>
         <label>
           Idratazione: <strong>{{ hydration }}%</strong><br>
-          <input type="range" min="60" max="80" step="1" v-model.number="hydration">
+          <div class="slider-container">
+            <button @click="updateHydration(-stepHydration)">-</button>
+            <input type="range" :min="minHydration" :max="maxHydration" :step="stepHydration" v-model.number="hydration">
+            <button @click="updateHydration(stepHydration)">+</button>
+          </div>
         </label>
       </div>
     </div>
     <Transition name="slide-fade">
-      <div class="container" v-if="quantity > 0">  
+      <div class="container" v-if="quantity > minQuantity">  
         <div class="content-grid">
           <div class="ingredients">
             <div class="list">
@@ -77,7 +113,7 @@
         </div>
       </div>
     </Transition>
-    <div class="footer" v-if="quantity > 0">
+    <div class="footer" v-if="quantity > minQuantity">
       <h2>Impastato Con Amore (e Tanta Pazienza Per La Lievitazione) ❤️</h2>
     </div>
   </main>
