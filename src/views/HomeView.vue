@@ -3,7 +3,7 @@
 
   const quantity = ref<number>(0);
   const doughWeight = ref(280);
-  const hydration = ref(70);
+  const hydration = ref(65);
   const saltPercentage = ref(2.5);
   const yeastPercentage = ref(0.3);
   const minDoughWeight = ref(150);
