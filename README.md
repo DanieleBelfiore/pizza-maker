@@ -2,7 +2,7 @@
 
 A simple and intuitive web application to help you prepare the perfect pizza dough to share with friends!
 
-<img alt="Logo" src="./src/assets/logo.jpg" height="250" />
+<img alt="Logo" src="./src/assets/logo.jpg" width="100%" />
 
 🌐 [**View Live App**](https://home-pizza-maker.netlify.app)
 
