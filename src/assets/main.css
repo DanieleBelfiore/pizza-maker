@@ -19,8 +19,9 @@ h6 {
   padding-bottom: 8px;
 }
 
-:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid #428bca;
+  outline-offset: 2px;
 }
 
 button {
@@ -40,8 +41,8 @@ button {
 }
 
 button:hover {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #3071a9;
+  border-color: #2d6898;
   color: #fff;
 }
 
@@ -108,6 +109,8 @@ li {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .content-grid {
@@ -189,11 +192,6 @@ input[type="range"] {
   transform: translateY(40px);
 }
 
-.responsive-img {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
 .responsive-img:hover {
   transform: scale(1.1) rotate(8deg);
 }
@@ -204,6 +202,12 @@ input[type="range"] {
   justify-content: center;
   gap: 10px;
   margin-top: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  opacity: 0.7;
+  margin: 16px auto;
 }
 
 .slider-container button {
