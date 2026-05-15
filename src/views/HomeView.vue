@@ -101,12 +101,12 @@
                 <li>Si aumenta la velocità (<strong>velocità 4</strong>) per dare forza e <strong>incordare l'impasto</strong> finché non si stacca dalle pareti e rimane attaccato alla foglia.</li>
                 <li>Se la temperatura dell'impasto dovesse superare i <strong>~23°</strong>, fermare tutto e mettere il boccale coperto in <strong>frigo</strong> per <strong>~10 minuti</strong>.</li>
                 <li>Dopo che si è amalgamato bene tutto l'impasto, stendere l'impasto sul banco e attendere <strong>~5 minuti</strong> per farlo <strong>riposare</strong>.</li>
-                <li>Chiudere il panetto con le classiche <strong>pieghe a portafoglio</strong> e mettere l'impasto in un contenitore aggiungendo un filo d'<strong>olio</strong> nel fondo e lasciarlo <strong>lievitare</strong> con coperchio a temperatura ambiente per <strong>~1 ora</strong>.</li>
+                <li>Chiudere il panetto con le classiche <strong>pieghe a portafoglio</strong> e mettere l'impasto in un contenitore aggiungendo un filo d'<strong>olio</strong> nel fondo e lasciarlo <strong>lievitare</strong> con coperchio a temperatura ambiente per <strong>~2 ore</strong>.</li>
                 <li>Fare la <strong>piega di rinforzo</strong> chiudendo nuovamente il panetto con le classiche <strong>pieghe a portafoglio</strong>.</li>
                 <li>Aggiungere se necessario nuovamente un filo d'<strong>olio</strong> nel fondo del contenitore e mettere l'impasto con il coperchio in <strong>frigo</strong> per almeno <strong>~24 ore</strong>.</li>
-                <li><strong>~3-4 ore prima di infornare</strong>, togliere l'impasto dal frigo e fare lo <strong>staglio</strong> dividendo in panetti da <strong>~{{ doughWeight }} grammi</strong>.</li>
+                <li>Togliere l'impasto dal frigo <strong>~3-4 ore prima di infornare</strong> e fare lo <strong>staglio</strong> dividendolo in panetti.</li>
                 <li>Far <strong>lievitare</strong> i panetti a temperatura ambiente in un contenitore da pizza chiuso.</li>
-                <li><strong>Stendere</strong> e <strong>condire</strong> a piacimento!</li>
+                <li><strong>Stendere</strong>, <strong>cucinare</strong> e <strong>condire</strong> a piacimento!</li>
               </ul>
             </div>
           </div>
@@ -114,7 +114,7 @@
       </div>
     </Transition>
     <div class="footer" v-if="quantity > QUANTITY_MIN">
-      <h2>Impastato Con Amore (e Tanta Pazienza Per La Lievitazione) ❤️</h2>
+      <h2>Impastato Con Amore e Tanta Pazienza Per La Lievitazione ❤️</h2>
     </div>
   </main>
 </template>
